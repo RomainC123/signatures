@@ -44,10 +44,11 @@ def get_labels_tsne(df):
 
     return df_tsne
 
-def get_cluster_report(df, label)
+def get_cluster_report(df, label):
+    pass
 
 # Plotting everything with TSNE
-fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(12, 8))
+fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(14, 8))
 cols = ['sig4', 'sig8', 'sig24']
 rows = ['kmeans', 'AgglomerativeClustering']
 
@@ -66,5 +67,5 @@ for ax, col in zip(axes[0], cols):
 for ax, row in zip(axes[:,0], rows):
     ax.set_ylabel(row, rotation=0, size='large')
 
-fig.tight_layout()
+# fig.tight_layout()
 plt.show()
